@@ -1,0 +1,18 @@
+{
+  "short_name": "DFK Chat",
+  "name": "DeFi Kingdoms Chat",
+  "version": "1.1",
+  "manifest_version": 2,
+  "background": {
+    "scripts": ["app/background.js"]
+  },
+  "browser_action": {},
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "css": ["/css/root.css"],
+      "js": ["/static/js/content.js"]
+    }
+  ],
+  "web_accessible_resources": ["/static/css/content.css", "/static/media/*"]
+}
