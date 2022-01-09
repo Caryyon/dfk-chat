@@ -54,7 +54,7 @@ function App({ isExt }) {
         {msgList.map(({ username, message }, i) => (
           <div className="dfkc-ChatItem" key={i}>
             <span className="dfkc-username">{username}: </span>
-            <p className="dfkc-message">{message}</p>
+            <p className="dfkc-message"> {message}</p>
           </div>
         ))}
       </div>
